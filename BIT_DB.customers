@@ -35,3 +35,8 @@ on feb.orderid=cust.order_id
 where feb.quantity>2;rom BIT_DB.
 
 
+select product, SUM(quantity)
+from BIT_DB.FebSales
+where location like '%Los angeles%'
+group by product;
+
